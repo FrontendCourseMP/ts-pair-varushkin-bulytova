@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>ФИО</h1>
     <form action="#">
-        <label for="lastname">Фамилия</label><input type="text" id="lastname"><br>
-        <label for="name">Имя</label><input type="text" id="name"><br>
-        <label for="patronymic">Отчество</label><input type="text" id="patronymic"><br>
-        <button type="button" id="button">Показать ФИО</button><br>
-        <output id="output"></output>
+      <label for="lastname">Фамилия</label
+      ><input type="text" id="lastname" /><br />
+      <label for="name">Имя</label><input type="text" id="name" /><br />
+      <label for="patronymic">Отчество</label
+      ><input type="text" id="patronymic" /><br />
+      <button type="button" id="button">Показать ФИО</button><br />
+      <output id="output"></output>
     </form>
-    <script src="dist/task1.js" type="module"></script>
-</body>
+
+    <h1>Строка с вычислениями</h1>
+    <form id="expr-form">
+      <label for="expr">Введите выражение:</label><br />
+      <input
+        id="expr"
+        name="expr"
+        type="text"
+        placeholder="например: 2 + 3 * 4.5 + 1"
+        style="width: 30%"
+      />
+      <button id="calc" type="submit">Вычислить</button>
+      <button id="clear" type="button">Очистить</button>
+    </form>
+    <p id="message" aria-live="polite"></p>
+    <p>Результат: <span id="result">-</span></p>
+
+    <script type="module" src="./dist/main.js"></script>
+  </body>
 </html>
